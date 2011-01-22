@@ -1,0 +1,15 @@
+
+<h2>Select following Day to see menu item</h2>
+
+<%form_tag :action => 'show'  do %>
+
+<p><label for="book_subject"> </label>Select Day:
+<%= collection_select(:daywisemenu,:day_id,@days,:id,:dayname) %></p>
+
+<div id="Statediv">
+	<%= render :partial => 'state' %>
+</div>
+					
+
+<%= submit_tag "Show Menu List" %>
+<% end  %>

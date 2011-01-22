@@ -1,0 +1,2 @@
+module DaywisemenuHelper
+end

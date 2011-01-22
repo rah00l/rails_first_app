@@ -1,0 +1,15 @@
+<h1>Add new MenuItem</h1>
+<% form_tag :action => 'create'  do %>
+
+<p><label for="book_title">Name of menuitem</label>:
+<%= text_field 'daywisemenu', 'menuitem' %></p>
+
+
+<p><label for="book_subject">Select a Day</label>:
+<%= collection_select(:daywisemenu,:day_id,@days,:id,:dayname) %></p>
+
+
+
+<%= submit_tag "Create" %>
+<% end  %>
+<%= link_to 'Back', {:action => 'list'} %>

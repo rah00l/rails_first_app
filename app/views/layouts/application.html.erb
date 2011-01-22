@@ -1,0 +1,19 @@
+   <html>
+   <head>
+	  <style type="text/css">
+	   div#user_nav { float: right; font-size: 0.9em; }
+	   </style>
+    </head>
+	<body>
+	<div id="user_nav">  
+       	<% if current_user %>  
+     		<%= link_to "Edit profile", edit_user_path(:current) %>  
+     		<%= link_to "Logout", logout_path %>  
+   		<% else %>  
+     		<%= link_to "Register", new_user_path %>  
+     		<% link_to "Log in", login_path %>  
+   		<% end %>  
+    </div>  
+	<div><%=yield %></div>
+	</body>
+	</head>

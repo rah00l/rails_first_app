@@ -1,0 +1,14 @@
+
+<h2> MenuItems for the selected Day are as following : </h2> 
+
+<% if @daywisemenu!= nil %>
+
+   <% for daywisemenu in @daywisemenu %>
+			 <ol><%= daywisemenu.menuitem %> <br /></ol>
+	<% end %>
+
+<%end%>
+
+</br>
+
+<%= link_to 'Back', {:controller => 'menudisplay', :action => 'index'} %>

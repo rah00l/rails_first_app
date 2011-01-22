@@ -1,0 +1,25 @@
+ <% form_for @user do |form| %>  
+ <%= form.error_messages %>  
+ <ul class="formList">  
+   <li>  
+     <%= form.label :username, "Username" %>  
+     <%= form.text_field :username %>  
+   </li></br>  
+   <li>  
+     <%= form.label :email, "Email" %>  
+     <%= form.text_field :email %>  
+   </li> </br> 
+   <li>  
+     <%= form.label :password, "Password" %>  
+     <%= form.password_field :password %>  
+   </li>  </br>
+   <li>  
+     <%= form.label :password_confirmation, "Password confirmation" %>  
+     <%= form.password_field :password_confirmation %>  
+   </li>  </br>
+   </ul>  
+   <div>  
+     <%= form.submit "Submit" %>  
+   </div>  
+ 
+ <% end %>

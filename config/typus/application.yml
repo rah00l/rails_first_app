@@ -1,0 +1,35 @@
+# Typus Models Configuration File
+#
+# Use the README file on the same folder as this file as a reference to
+# customize this file to your needs.
+
+Day:
+  fields:
+    list: dayname
+    form: dayname
+    show: id, dayname
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: 
+  filters:
+  search:
+  application: menu
+  description:
+
+Daywisemenu:
+  fields:
+    list: menuitem, day
+    form: menuitem, day
+    show: id, menuitem, day
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: day
+  filters:
+  search:
+  application: menu
+  description:
+
